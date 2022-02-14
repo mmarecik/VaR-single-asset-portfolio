@@ -5,6 +5,10 @@ date: "7 01 2022"
 output: html_document
 ---
 
+
+##### Kod w R: [link](https://github.com/mmarecik/VaR-single-asset-portfolio/blob/main/code.R)
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	fig.align = "center",
