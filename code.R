@@ -5,9 +5,9 @@ library(gridExtra)
 library(e1071) #kurtoza
 library(GAS)
 
-dax <- read.csv("C:/Users/Magda/Desktop/Studia/Sem5/IMRR/Projekt1/dax.csv") # German Stock Index DAX 30
-wig <- read.csv("C:/Users/Magda/Desktop/Studia/Sem5/IMRR/Projekt1/wig.csv") # Shanghai Stock Exchange
-smi <- read.csv("C:/Users/Magda/Desktop/Studia/Sem5/IMRR/Projekt1/smi.csv") # S&P 500
+dax <- read.csv("dax.csv") # German Stock Index DAX 30
+wig <- read.csv("wig.csv") 
+smi <- read.csv("smi.csv")
 
 dax <- dax[,c(1,5)]
 wig <- wig[,c(1,5)]
@@ -51,7 +51,7 @@ ggplot(smi, aes(data)) +
   theme_bw() + ylab("") + xlab("")
 
 
-# Dokonaæ krótkiej opisowej analizy danych (opis wybranych zmiennych, statystyki opisowe itp).
+# DokonaÃ¦ krÃ³tkiej opisowej analizy danych (opis wybranych zmiennych, statystyki opisowe itp).
 
 ggplot(dax, aes(x=data, y=st.zwrotu)) +
   geom_line() + labs(title="Logarytmiczne stopy zwrotu niemieckiego indeksu gieldowego DAX30 \nw latach 2006-2021") + 
@@ -67,7 +67,7 @@ ggplot(smi, aes(x=data, y=st.zwrotu)) +
 #----
 
 #----
-# Wartoœci wybranych statystyk opisowych  logarytmicznych stóp zwrotu z indeksów gie³dowych notowanych na GPW w Warszawie
+# WartoÅ“ci wybranych statystyk opisowych  logarytmicznych stÃ³p zwrotu z indeksÃ³w gieÂ³dowych notowanych na GPW w Warszawie
 
 indeks = c("DAX", "WIG", "SMI")
 
